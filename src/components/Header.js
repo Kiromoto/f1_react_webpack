@@ -1,6 +1,11 @@
 import React, {Component, Fragment} from "react";
 import "../styles/Header.css";
-import App from "./App";
+
+const handleClick = () => {
+    alert('TEST! Press button!');
+    console.log('TEST! Press button! print console')
+
+}
 
 class Header extends Component {
     render() {
@@ -23,6 +28,9 @@ class Header extends Component {
                             </a>
                         </ul>
                     </nav>
+                    <div>
+                        <button className="btn" onClick={handleClick}>Click ME!</button>
+                    </div>
                 </header>
             </Fragment>
         );

@@ -34,3 +34,9 @@ header nav ul a li {
 header nav ul a li:hover {
     color: orange;
 }
+
+button {
+    background: #e7e3de;
+    font-size: 15px;
+    font-weight: bold;
+}
