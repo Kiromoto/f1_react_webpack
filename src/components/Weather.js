@@ -15,7 +15,7 @@ function Weather() {
     //     setWeatherNow(result.data)
     // });
 
-    if (!weatherNow.length) {
+    if (weatherNow.length > 0) {
         axios.get(weatherUrl).then(result => {
             console.log(result);
             setWeatherNow(result.data);
