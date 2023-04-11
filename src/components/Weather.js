@@ -23,17 +23,19 @@ function Weather() {
     //     console.log('weatherNow is FULL === ' + `${weatherNow}`);
     //     console.log(weatherNow);
     // }
+    const listIndex = 8
+    let s = "https://openweathermap.org/img/wn/" + `${wn.list[listIndex].weather[0].icon}` + "@2x.png";
 
     return (
         <div className="divForAllWeather">
             <h2>Погода на сейчас:</h2>
             <div className="nowDayWeather">
-                <h3>Погода на {wn.list[0].dt_txt}</h3>
-                <h4>{wn.list[0].main.temp}</h4>
-                <h4>{wn.list[0].main.pressure}</h4>
-                <h4>{wn.list[0].dt}</h4>
-                <h4>{wn.list[0].weather[0].icon}</h4>
-                <img src="https://openweathermap.org/img/wn/10d@2x.png"></img>
+                <h3>Погода на {wn.list[listIndex].dt_txt}</h3>
+                <h4>{wn.list[listIndex].main.temp}</h4>
+                <h4>{wn.list[listIndex].main.pressure}</h4>
+                <h4>{wn.list[listIndex].dt}</h4>
+                <h4>{wn.list[listIndex].weather[0].icon}</h4>
+                <img src={s}></img>
 
 
             </div>
