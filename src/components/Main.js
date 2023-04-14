@@ -6,8 +6,7 @@ function Main() {
     return (
         <Fragment>
             <main>
-                <h1>Print from App.js</h1>
-                <h1>Print second line from App.js</h1>
+                <h1>Прогноз погоды на ближайшие 5 дней</h1>
                 <div>
                     <Weather />
                 </div>

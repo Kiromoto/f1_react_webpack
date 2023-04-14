@@ -1,3 +1,32 @@
 div {
-    color: #e7e3de;
+    /*color: #e7e3de;*/
+    border-color: #e7e3de;
+
+}
+
+.divForAllWeather {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    border-color: #f68c0a;
+}
+
+.nowDayWeather {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 20px 20px;
+    margin: 5px;
+    border-color: #e7e3de;
+    background-color: #e7e3de;
+}
+
+.nowDayWeather p {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px 0;
+
+}
+
+.nowDayWeather img {
+    justify-self: center;
+    align-self: center;
 }
