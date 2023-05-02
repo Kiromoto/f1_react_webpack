@@ -16,7 +16,7 @@ div {
     padding: 0px 0 20px 20px;
     margin: 5px;
     border-color: #e7e3de;
-    background-color: #e7e3de;
+    background-color: #8ed7d7;
 }
 
 .nowDayWeather p {
@@ -27,6 +27,27 @@ div {
 }
 
 .nowDayWeather img {
+    justify-self: center;
+    align-self: center;
+}
+
+.Day8Weather {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 20px 20px;
+    margin: 5px;
+    border-color: #e7e3de;
+    background-color: #d7daae;
+}
+
+.Day8Weather p {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 8px 0;
+
+}
+
+.Day8Weather img {
     justify-self: center;
     align-self: center;
 }
