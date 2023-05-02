@@ -6,7 +6,6 @@ function Main() {
     return (
         <Fragment>
             <main>
-                <h1>Прогноз погоды на ближайшие 5 дней</h1>
                 <div>
                     <Weather />
                 </div>
