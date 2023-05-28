@@ -1,49 +1,8 @@
 import React, {useState, Fragment} from "react";
 import "../styles/Header.css";
 
-const City = [
-    {
-        value: "Minsk",
-        label: "Минск",
-        lat: 53.9024716,
-        lon: 27.5618225,
-    },
-    {
-        value: "Moskow",
-        label: "Москва",
-        lat: 55.7504461,
-        lon: 37.6174943,
-    },
-    {
-        value: "London",
-        label: "Лондон",
-        lat: 51.51561771,
-        lon: -0.0919983,
-    },
-    {
-        value: "Kiev",
-        label: "Киев",
-        lat: 50.4500336,
-        lon: 30.5241361,
-    },
-    {
-        value: "Istanbul",
-        label: "Стамбул",
-        lat: 41.0091982,
-        lon: 28.9662187,
-    },
-];
-
 
 function Header(props) {
-    let [count, increaseCount] = React.useState(0);
-    const [currentCity, setCurrentCity] = useState(City[0]);
-
-    const handleClick = () => {
-        increaseCount(count + 1);
-    }
-
-
     return (
         <Fragment>
             <header>

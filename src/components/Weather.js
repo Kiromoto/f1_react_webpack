@@ -42,27 +42,13 @@ const City = [
 
 
 let weatherUrlFree = "http://api.openweathermap.org/data/2.5/forecast?lat=" + `${City[0].lat}` + "&lon=" + `${City[0].lon}` + "&units=metric&&lang=ru&appid=" + `${apikey}`;
-// console.log('weatherUrlFree START');
-// console.log(weatherUrlFree);
-// let weatherNow = [];
-// console.log('weatherNow START');
-// console.log(weatherNow);
-//
-//
-// console.log('currentCity START');
-// console.log(currentCity);
-//
-// let hrefPic = {};
-// console.log('hrefPic START');
-// console.log(hrefPic);
-
 
 function Weather(props) {
     // https://api.openweathermap.org/data/3.0/onecall?lat=53.9024716&lon=27.5618225&&exclude=hourly,minutely&units=metric&appid=f548d72749c6aad919dcb1751ae76631
     // const weatherUrl = "https://api.openweathermap.org/data/3.0/onecall?lat=" + `${City[0].lat}` + "&lon=" + `${City[0].lon}` + "&exclude=hourly,minutely&units=metric&appid=" + `${apikey}`;
     // let weatherUrlFree = "http://api.openweathermap.org/data/2.5/forecast?lat=" + `${City[0].lat}` + "&lon=" + `${City[0].lon}` + "&units=metric&&lang=ru&appid=" + `${apikey}`;
     let weatherNow = [];
-    const [currentCity, setCurrentCity] = useState(City[0]);
+    let [currentCity, setCurrentCity] = useState(City[0]);
     let hrefPic = {};
 
     function makePicHref(w) {
@@ -84,6 +70,7 @@ function Weather(props) {
     // }
 
     const onChange = (newValue) => {
+        setCurrentCity('setCurrentCity = newValue');
         setCurrentCity(newValue);
 
         console.log('currentCity.lon ' + currentCity.label);
